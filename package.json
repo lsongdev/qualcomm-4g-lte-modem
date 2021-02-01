@@ -1,0 +1,16 @@
+{
+  "name": "qualcomm-4g-lte-modem",
+  "version": "0.0.0",
+  "description": "qualcomm-4g-lte-modem",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lsong <song940@gmail.com> (https://lsong.org/)",
+  "license": "MIT",
+  "dependencies": {
+    "xml2js": "^0.4.23"
+  }
+}

@@ -43,3 +43,10 @@ export const send = (phones, content, { Index = -1, Sca = '', Reserved = 1 } = {
 export const status = () => {
   return get('api/sms/send-status');
 };
+
+// which_ajax=xmldata=<?xml version="1.0" encoding="UTF-8"?><request><Index>a10</Index></request>: 
+export const del = index => {
+  if(!Array.isArray(index)) index = [index];
+  const xml = index.map(id => `<Index>${id}</Index>`).join('');
+  return post('api/sms/delete-sms', xml);
+};

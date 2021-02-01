@@ -20,9 +20,12 @@ import { user, device, monitoring, sms } from '../index.js';
     console.log(message);
   }
 
-  const d = await sms.send([
-    '18510100102'
-  ], 'hello world');
-  console.log(d);
+  const e = await sms.del(['a5', 'a6']);
+  console.log(e);
+
+  // const d = await sms.send([
+  //   '18510100102'
+  // ], 'hello world');
+  // console.log(d);
 
 })();

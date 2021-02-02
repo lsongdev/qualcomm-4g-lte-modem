@@ -1,6 +1,6 @@
 {
   "name": "qualcomm-4g-lte-modem",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "qualcomm-4g-lte-modem",
   "main": "index.js",
   "type": "module",
@@ -12,5 +12,17 @@
   "license": "MIT",
   "dependencies": {
     "xml2js": "^0.4.23"
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/song940/qualcomm-4g-lte-modem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/song940/qualcomm-4g-lte-modem/issues"
+  },
+  "homepage": "https://github.com/song940/qualcomm-4g-lte-modem#readme"
 }

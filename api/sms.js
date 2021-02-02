@@ -17,8 +17,8 @@ export const list = ({ PageIndex = 1, ReadCount = 20, BoxType = 1, SortType = 0,
   xml += `<SortType>${SortType}</SortType>`;
   xml += `<Ascending>${Ascending}</Ascending>`;
   xml += `<UnreadPreferred>${UnreadPreferred}</UnreadPreferred>`;
-  return post('api/sms/sms-list', xml).then(({ Count, Messages }) => {
-    return { Count, Messages: Messages.Message.map(flatten) };
+  return post('api/sms/sms-list', xml).then(({ Count, Messages: { Message: messages = [] } }) => {
+    return { Count, Messages: messages.map(flatten) };
   });
 };
 

@@ -23,9 +23,13 @@ import { user, device, monitoring, sms } from '../index.js';
   const e = await sms.del(['a5', 'a6']);
   console.log(e);
 
-  // const d = await sms.send([
-  //   '18510100102'
-  // ], 'hello world');
-  // console.log(d);
+  const d = await sms.send([
+    '18510100102',
+  ], 'hello world');
+  console.log(d);
+
+
+  const s = await sms.status();
+  console.log(s);
 
 })();
